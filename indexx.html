@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="player_1">
+        <h2>Player 1</h2>
+        <button id="throw_dice">Throw Dice</button>
+        <p id="dice_result">Dice Result is </p>
+        </div>
+         <div id="player_2">
+        <h2>Player 2</h2>
+        <button id="throw_dice2">Throw Dice</button>
+        <p id="dice_result2">Dice Result is </p>
+        </div>
+    </div>
+</body>
+<script >
+let throw_dice = document.querySelector("#throw_dice")
+let diceresult = document.querySelector("#dice_result")
+let player1 = document.querySelector("#player1")
+throw_dice.addEventListener('click', () => {
+    diceresult.value = Math.floor(Math.random() * 6) + 1
+    diceresult.innerText = `Player 1's Dice Result is ${diceresult.value}`
+    if (diceresult.value == 6){
+        alert("Wow Player 1! You got Lucky!")
+    }else if (diceresult.value == 1) {
+        alert("Player 1,Next time better luck!")
+    } else {
+        alert("You rolled " + diceresult.value + "," + " Player 1!")
+    }
+})
+
+let throw_dice2 = document.querySelector("#throw_dice2")
+let diceresult2 = document.querySelector("#dice_result2")
+let player2 = document.querySelector("#player2")
+throw_dice2.addEventListener('click', () => {
+    diceresult2.value = Math.floor(Math.random() * 6) + 1
+    diceresult2.innerText = `Player 2's Dice Result is ${diceresult2.value}`
+    if (diceresult2.value == 6){
+        alert("Wow Player 2! You got Lucky!")
+    }else if (diceresult2.value == 1) {
+        alert("Player 2,Next time better luck!")
+    } else {
+        alert("You rolled " + diceresult2.value + "," + " Player 2!")
+    }
+})
+
+</script>
+</html>
