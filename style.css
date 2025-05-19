@@ -4,25 +4,14 @@ body{
     color: white;
 }
 #presstostart{
-    position: absolute;
-    right: 600px;
     padding: 10px;
     background-color: black;
     color: white;
-    top: 200px;
 }
 #presstostart:hover{
-    position: absolute;
-    right: 600px;
     padding: 10px;
     background-color: white;
     color: black;
-    top: 200px;
-}
-#h1{
-    position: absolute;
-    right: 580px;
-    top: 120px;
 }
 body > div{
     display: none;
@@ -32,11 +21,26 @@ body > div{
     background-color: white;
     color: black;
     border: 2px solid gray;
-        padding-right: 30px;
-    padding-left: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 #throw_dice:hover{
     background-color: black;
     color: white;
     border: 2px solid white;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

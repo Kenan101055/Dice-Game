@@ -10,17 +10,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="h1">Dice Game!</h1>
-    <button id="presstostart">Press To Start
-    </button>
+    <div id="container">
+    <h1>Dice Game!</h1>
+    <button id="presstostart">Press To Start</button>
+    <h3>Score 10 to win</h3>
+    </div>
     <div id="game">
         <div id="player_1">
+        <h2 id="points1">Points:0</h2>
         <h2>Player 1</h2>
         <p id="dice_result">Player 1's Dice Result is </p>
         <img src="./pLAYER1.png" width="400px" height="200px" alt="">
         </div>
-        <button id="throw_dice">Throw Dice</button>
+        <div id="btn-div"><button id="throw_dice">Throw Dice</button></div>
         <div id="player_2">
+        <h2 id="points2">Points:0</h2>
         <h2>Player 2</h2>
         <p id="dice_result2">Player 2's Dice Result is </p>
         <img src="./pLAYER1.png" width="400px" height="200px"  alt="">
